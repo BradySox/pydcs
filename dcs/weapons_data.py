@@ -4780,6 +4780,11 @@ class Weapons:
         "name": "LAU-7 Captive AIM-9M for ACM",
         "weight": 85.73,
     }
+    LAU_7_with_AIM_9B = {
+        "clsid": "{MB339_AIM-9B}",
+        "name": "LAU-7 with AIM-9B",
+        "weight": 114.89,
+    }
     LAU_7_with_AIM_9B_Sidewinder_IR_AAM = {
         "clsid": "{HB_A6E_LAU7_AIM9B}",
         "name": "LAU-7 with AIM-9B Sidewinder IR AAM",
@@ -12252,6 +12257,7 @@ weapon_ids = {
     "{LAU-7 wtip - TCTS L}": Weapons.LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod_,
     "{LAU-7 wtip - TCTS R}": Weapons.LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod__,
     "{LAU-7 wtip - CATM-9M}": Weapons.LAU_7_Captive_AIM_9M_for_ACM,
+    "{MB339_AIM-9B}": Weapons.LAU_7_with_AIM_9B,
     "{HB_A6E_LAU7_AIM9B}": Weapons.LAU_7_with_AIM_9B_Sidewinder_IR_AAM,
     "{MB339_AIM-9J}": Weapons.LAU_7_with_AIM_9J,
     "{MB339_AIM-9L}": Weapons.LAU_7_with_AIM_9L,
