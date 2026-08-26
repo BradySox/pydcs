@@ -1710,6 +1710,55 @@ class Unarmed:
         air_weapon_dist = 0
 
 
+    class ATZ_60_TANK(unittype.VehicleType):
+        id = "ATZ-60_TANK"
+        name = "Refueler ATZ-60 Tank"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_HX77(unittype.VehicleType):
+        id = "CHAP_HX77"
+        name = "Truck HX77 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_HX81_Tractor(unittype.VehicleType):
+        id = "CHAP_HX81_Tractor"
+        name = "Tractor HX81 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_SLT50_Tractor(unittype.VehicleType):
+        id = "CHAP_SLT50_Tractor"
+        name = "Tractor SLT-50 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_SLT50_Trailer(unittype.VehicleType):
+        id = "CHAP_SLT50_Trailer"
+        name = "Trailer SLT-50 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_75_Zil_Trailer(unittype.VehicleType):
+        id = "S_75_Zil_Trailer"
+        name = "S-75 Trailer"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class TZ_22_TANK(unittype.VehicleType):
+        id = "TZ-22_TANK"
+        name = "Refueler TZ-22 Tank"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
 class Armor:
 
     class AAV7(unittype.VehicleType):
@@ -1742,10 +1791,10 @@ class Armor:
 
     class BMP_3(unittype.VehicleType):
         id = "BMP-3"
-        name = "IFV BMP-3"
+        name = "IFV BMP-3 [CH]"
         detection_range = 0
         threat_range = 4000
-        air_weapon_dist = 1000
+        air_weapon_dist = 2000
 
     class BRDM_2(unittype.VehicleType):
         id = "BRDM-2"
@@ -2350,6 +2399,29 @@ class Armor:
         air_weapon_dist = 0
 
 
+    class CHAP_BMP3_ERA(unittype.VehicleType):
+        id = "CHAP_BMP3_ERA"
+        name = "IFV BMP-3 ERA [CH]"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 2000
+
+    class CHAP_M1296(unittype.VehicleType):
+        id = "CHAP_M1296"
+        name = "IFV M1296 Dragoon [CH]"
+        detection_range = 0
+        threat_range = 3000
+        air_weapon_dist = 3000
+        eplrs = True
+
+    class CHAP_Titan(unittype.VehicleType):
+        id = "CHAP_Titan"
+        name = "MRAP ZA-SpN Titan [CH]"
+        detection_range = 0
+        threat_range = 3000
+        air_weapon_dist = 3000
+        eplrs = True
+
 class MissilesSS:
 
     class CHAP_9K720_HE(unittype.VehicleType):
@@ -2887,4 +2959,14 @@ vehicle_map = {
     "DRG_Class_86": Locomotive.DRG_Class_86,
     "German_covered_wagon_G10": Carriage.German_covered_wagon_G10,
     "German_tank_wagon": Carriage.German_tank_wagon,
+    "CHAP_BMP3_ERA": Armor.CHAP_BMP3_ERA,
+    "CHAP_M1296": Armor.CHAP_M1296,
+    "CHAP_Titan": Armor.CHAP_Titan,
+    "ATZ-60_TANK": Unarmed.ATZ_60_TANK,
+    "CHAP_HX77": Unarmed.CHAP_HX77,
+    "CHAP_HX81_Tractor": Unarmed.CHAP_HX81_Tractor,
+    "CHAP_SLT50_Tractor": Unarmed.CHAP_SLT50_Tractor,
+    "CHAP_SLT50_Trailer": Unarmed.CHAP_SLT50_Trailer,
+    "S_75_Zil_Trailer": Unarmed.S_75_Zil_Trailer,
+    "TZ-22_TANK": Unarmed.TZ_22_TANK,
 }

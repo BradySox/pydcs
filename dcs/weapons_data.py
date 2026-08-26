@@ -148,6 +148,12 @@ class Weapons:
         "weight": 219,
         "settings": weapon_settings_registry["905ae409"],
     }
+    AGM_45B_Shrike_ARM__LAU_34_ = {
+        "clsid": "{LAU_34_AGM_45B}",
+        "name": "AGM-45B Shrike ARM (LAU-34)",
+        "weight": 224,
+        "settings": weapon_settings_registry["905ae409"],
+    }
     AGM_45B_Shrike_ARM = {
         "clsid": "{AGM_45B}",
         "name": "AGM-45B Shrike ARM",
@@ -11236,6 +11242,12 @@ class Weapons:
         "weight": 219,
         "settings": weapon_settings_registry["905ae409"],
     }
+    _Special_Weapons_Adapter__AGM_45B_Shrike_ARM__LAU_34_ = {
+        "clsid": "{LAU_34_AGM_45B_SWA}",
+        "name": "(Special Weapons Adapter) AGM-45B Shrike ARM (LAU-34)",
+        "weight": 224,
+        "settings": weapon_settings_registry["905ae409"],
+    }
     _Special_Weapons_Adapter__AGM_65A___Maverick_A__TV_Guided___LAU_117__Special_Weapons_Adapter__ = {
         "clsid": "{HB_F4E_AGM-65A_LAU117_SWA}",
         "name": "(Special Weapons Adapter) AGM-65A - Maverick A (TV Guided) (LAU-117)(Special Weapons Adapter) ",
@@ -11352,6 +11364,7 @@ weapon_ids = {
     "{9BCC2A2B-5708-4860-B1F1-053A18442067}": Weapons.AGM_154C___JSOW_Unitary_BROACH,
     "{AGM_45A}": Weapons.AGM_45A_Shrike_ARM,
     "{LAU_34_AGM_45A}": Weapons.AGM_45A_Shrike_ARM__LAU_34_,
+    "{LAU_34_AGM_45B}": Weapons.AGM_45B_Shrike_ARM__LAU_34_,
     "{AGM_45B}": Weapons.AGM_45B_Shrike_ARM,
     "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}": Weapons.AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_,
     "{AGM_62_I}": Weapons.AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_,
@@ -13449,6 +13462,7 @@ weapon_ids = {
     "{AGM_12B_SWA}": Weapons._Special_Weapons_Adapter__AGM_12B_Bullpup_MCLOS_ASM__LAU_34_,
     "{AGM_12C_SWA}": Weapons._Special_Weapons_Adapter__AGM_12C_Bullpup_MCLOS_ASM,
     "{LAU_34_AGM_45A_SWA}": Weapons._Special_Weapons_Adapter__AGM_45A_Shrike_ARM__LAU_34_,
+    "{LAU_34_AGM_45B_SWA}": Weapons._Special_Weapons_Adapter__AGM_45B_Shrike_ARM__LAU_34_,
     "{HB_F4E_AGM-65A_LAU117_SWA}": Weapons._Special_Weapons_Adapter__AGM_65A___Maverick_A__TV_Guided___LAU_117__Special_Weapons_Adapter__,
     "{HB_F4E_AGM-65B_LAU117_SWA}": Weapons._Special_Weapons_Adapter__AGM_65B___Maverick_B__TV_Guided___LAU_117__Special_Weapons_Adapter__,
     "{HB_F4E_AGM-65D_LAU117_SWA}": Weapons._Special_Weapons_Adapter__AGM_65D___Maverick_D__IIR_ASM___LAU_117__Special_Weapons_Adapter__,
