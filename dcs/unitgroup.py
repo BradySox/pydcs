@@ -357,6 +357,7 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         self.communication = True
         self.uncontrolled = False
         self.radio_set = False
+        self.dyn_spawn_template = False
         self.task = "CAS"
         self.units = []  # type: List[FlyingUnitT]
         self.nav_target_points = []  # type: List[NavTargetPoint]
@@ -388,6 +389,7 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         self.communication = d.get("communication", False)
         self.uncontrolled = d["uncontrolled"]
         self.radio_set = d.get("radioSet", False)
+        self.dyn_spawn_template = d.get("dynSpawnTemplate", False)
         self.nav_target_points = []
         for n in d.get("NavTargetPoints", []):
             nav_target_point_dict = d["NavTargetPoints"][n]
@@ -553,6 +555,8 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         d["communication"] = self.communication
         d["uncontrolled"] = self.uncontrolled
         d["radioSet"] = self.radio_set
+        if self.dyn_spawn_template:
+            d["dynSpawnTemplate"] = True
 
         if self.nav_target_points:
             d["NavTargetPoints"] = [n.dict() for n in self.nav_target_points]
