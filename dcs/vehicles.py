@@ -1114,6 +1114,21 @@ class AirDefence:
         threat_range = 5700
         air_weapon_dist = 5700
 
+    class CHAP_PGZ09(unittype.VehicleType):
+        id = "CHAP_PGZ09"
+        name = "SPAAG PGZ-09 [CH]"
+        detection_range = 20000
+        threat_range = 4000
+        air_weapon_dist = 4000
+        eplrs = True
+
+    class CHAP_Ural4320_ZU232(unittype.VehicleType):
+        id = "CHAP_Ural4320_ZU232"
+        name = "AAA ZU-23-2 on Ural 4320 [CH]"
+        detection_range = 0
+        threat_range = 2500
+        air_weapon_dist = 2500
+
 
 class Fortification:
 
@@ -1755,6 +1770,27 @@ class Unarmed:
     class TZ_22_TANK(unittype.VehicleType):
         id = "TZ-22_TANK"
         name = "Refueler TZ-22 Tank"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_UralTyphoon(unittype.VehicleType):
+        id = "CHAP_UralTyphoon"
+        name = "MRAP Ural Typhoon-U [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_ZIL131(unittype.VehicleType):
+        id = "CHAP_ZIL131"
+        name = "Truck ZIL-131 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_ZIL131_Kung(unittype.VehicleType):
+        id = "CHAP_ZIL131_Kung"
+        name = "Truck ZIL-131 Kung C2 [CH]"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -2422,6 +2458,29 @@ class Armor:
         air_weapon_dist = 3000
         eplrs = True
 
+    class CHAP_ZTQ15(unittype.VehicleType):
+        id = "CHAP_ZTQ15"
+        name = "LT ZTQ-15 [CH]"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
+        eplrs = True
+
+    class CHAP_BMD2(unittype.VehicleType):
+        id = "CHAP_BMD2"
+        name = "IFV BMD-2 [CH]"
+        detection_range = 5000
+        threat_range = 2000
+        air_weapon_dist = 2000
+
+    class CHAP_Atlet(unittype.VehicleType):
+        id = "CHAP_Atlet"
+        name = "MRAP AMN-2 Atlet [CH]"
+        detection_range = 0
+        threat_range = 1000
+        air_weapon_dist = 1000
+        eplrs = True
+
 class MissilesSS:
 
     class CHAP_9K720_HE(unittype.VehicleType):
@@ -2969,4 +3028,12 @@ vehicle_map = {
     "CHAP_SLT50_Trailer": Unarmed.CHAP_SLT50_Trailer,
     "S_75_Zil_Trailer": Unarmed.S_75_Zil_Trailer,
     "TZ-22_TANK": Unarmed.TZ_22_TANK,
+    "CHAP_ZTQ15": Armor.CHAP_ZTQ15,
+    "CHAP_BMD2": Armor.CHAP_BMD2,
+    "CHAP_Atlet": Armor.CHAP_Atlet,
+    "CHAP_PGZ09": AirDefence.CHAP_PGZ09,
+    "CHAP_Ural4320_ZU232": AirDefence.CHAP_Ural4320_ZU232,
+    "CHAP_UralTyphoon": Unarmed.CHAP_UralTyphoon,
+    "CHAP_ZIL131": Unarmed.CHAP_ZIL131,
+    "CHAP_ZIL131_Kung": Unarmed.CHAP_ZIL131_Kung,
 }
